@@ -1,0 +1,19 @@
+/*
+Theme Name: Book-it-child
+Author:Cathy Healey
+Template: twentynineteen
+Version: 1.0.0
+Text Domain: book-it-child
+*/
+/* 3rd party packages normalize is imported by 2019*/
+
+
+/* SASS and Global'ish Stuff */
+
+@import "base/_baseline";
+@import "base/_variables";
+@import "base/_utility-classes";
+
+
+/* BEM Blocks */
+@import "modules/_contact-form-7";

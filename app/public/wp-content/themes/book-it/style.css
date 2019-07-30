@@ -1,0 +1,179 @@
+/*
+Theme Name: Book-it-child
+Author:Cathy Healey
+Template: twentynineteen
+Version: 1.0.0
+Text Domain: book-it-child
+*/
+/* 3rd party packages normalize is imported by 2019*/
+/* SASS and Global'ish Stuff */
+body {
+  background-color: #ebecf3;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #333;
+}
+a:hover {
+  text-decoration: none;
+  background-color:green;
+}
+p, ul, ol {
+  margin: 0 0 1.65em 0;
+}
+p, li {
+  line-height: 1.65;
+}
+.about::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -85px; 
+  height: 85px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+/* background */
+/* current link nav */
+/*  
+Color Pallette 253 Hustle https://www.astellescolors.com/2018/01/09/color-inspiration-hustle/
+*/
+/* 
+ Color Pallette 204 https://www.astellescolors.com/2017/06/02/color-inspiration-freshened/
+ */
+/*Origiinal Territory   https://www.originalterritory.com/
+*/
+/* top nav my account, sign in, logo, slideshow overlay backgrounds, right colume feature background */
+/* left colume feature background */
+/* Navigation*/
+/* Backgrounds */
+/* lighten( salmon, 22.5% ); // lighten( #0999d4, 48% ); ^/
+
+/* Text */
+/* Links */
+/* Borders */
+/* buttons */
+/* Transition timeouts */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+.container--narrow {
+  max-width: 960px;
+}
+.section-break {
+  border: none;
+  border-top: 1px solid #DDD;
+  margin: 2.5rem 0;
+}
+.min-list {
+  padding: 0;
+  margin: 0;
+}
+.min-list li {
+  list-style: none;
+}
+.p-top-small {padding-top: 1rem}
+.p-top-large {padding-top: 1.6rem}
+.p-bottom-large {padding-bottom: 1.6rem}
+@media (min-width: 530px) {
+  .p-top-large {padding-top: 3.5rem}
+  .p-bottom-large {padding-bottom: 3.5rem}
+  }
+.no-margin {margin: 0}
+.nu {text-decoration: none}
+.nu:hover {text-decoration: underline}
+.t-left {text-align: left}
+.t-right {text-align: right}
+.t-center {text-align: center}
+.t-small {font-size: .85rem}
+.float-left {float: left}
+.float-right {float: right}
+.push-right {margin-right: 20px}
+.push-left {margin-left:20px;}
+.container:before,
+.container:after,
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.group:after {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+/* BEM Blocks */
+.pad-sides-20 {
+	padding: 0 20px;
+}
+.page-background {
+	background-color: #ebecf3;
+}
+.btn--orange {
+	background-color: #cc842f;
+
+}
+.btn--orange:hover{
+		background-color:#EE964B;
+	}
+.site-logo .custom-logo-link {
+	border-radius: 0%;
+
+	}
+.site-header a:hover{
+		
+	 background-color:transparent;
+
+
+	}
+.entry .entry-content p.has-background {
+    padding: 10px 30px;
+    background-color: #737c7e;/* grey heading paragraphs */
+}
+.entry .entry-title {
+    margin: 0;
+    display: none;
+}
+div.wpcf7 {
+	padding: 0 20px;
+}
+div.wpcf7 input[type="text"], 
+	div.wpcf7 input[type="email"], 
+	div.wpcf7 input[type="url"], 
+	div.wpcf7 input[type="password"], 
+	div.wpcf7 input[type="search"], 
+	div.wpcf7 input[type="number"], 
+	div.wpcf7 input[type="tel"], 
+	div.wpcf7 input[type="range"], 
+	div.wpcf7 input[type="date"], 
+	div.wpcf7 input[type="month"], 
+	div.wpcf7 input[type="week"], 
+	div.wpcf7 input[type="time"], 
+	div.wpcf7 input[type="datetime"], 
+	div.wpcf7 input[type="datetime-local"], 
+	div.wpcf7 input[type="color"], 
+	div.wpcf7 textarea { 
+		max-width: 100%;
+	}
+.book-it-container .button, .book-it-container button, .book-it-container input[type="button"], .book-it-container input[type="reset"], .book-it-container input[type="submit"] {
+		background-color: #cc842f;
+		width:100%;
+		text-align: center;
+	}
+.book-it-container .button:hover,.book-it-container button:hover,.book-it-container input[type="button"]:hover,.book-it-container input[type="reset"]:hover,.book-it-container input[type="submit"]:hover{
+			background-color:#EE964B;
+		}
+.wp-block-button__link:hover {
+	background-color:#EE964B;
+}
