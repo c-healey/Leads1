@@ -16,4 +16,6 @@ Text Domain: book-it-child
 
 
 /* BEM Blocks */
-@import "modules/_contact-form-7";
+
+@import "modules/_one-page-home";
+@import "modules/_main-navigation";

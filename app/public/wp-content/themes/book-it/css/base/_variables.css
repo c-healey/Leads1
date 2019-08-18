@@ -11,30 +11,10 @@ $charcoal: #333;
 
 
 
-/*  
-Color Pallette 253 Hustle https://www.astellescolors.com/2018/01/09/color-inspiration-hustle/
-*/
 
- $darkBlue: #0659a9;
- $mediumBlue: #0094de;
- $lightBlue: #83c0ed;
- $blueWhite: #deebf3;
- $coral: #ff9e8b;
- $darkCoral: #fe664e;
-
- /* 
- Color Pallette 204 https://www.astellescolors.com/2017/06/02/color-inspiration-freshened/
- */
- $yellow: #fcbd19;
- $orange: #fc8000;
- $green: #307123;
- $mediumGreen: #80b566;
- $lightGreen: #78b38e;
- $blueGreen: #458e78;
  
 /*Origiinal Territory   https://www.originalterritory.com/
 */
-
 $territoryOrange: #cc842f; /* top nav my account, sign in, logo, slideshow overlay backgrounds, right colume feature background */
 $territoryBlue: #404E66; /* left colume feature background */
 $territoryWhite: #f5f5f5;
@@ -45,12 +25,12 @@ $territoryEmailBtnBgrnd: #adadad;
 $territoryEmailInputBgrnd: #4c4c4c;
 $territoryEmailTxt: #4c4c4c;
 $topNavBgrnd: $territoryBlue;
-$topNavAnchorTxt: #575757;
+$darkGrey: #575757; /* grey */
 
 /* Navigation*/
 $color__top-nav: $territoryWhite;
-$color__top-nav-txt: $topNavAnchorTxt;
-$color__top-nav-txt-hover: $territoryOrange;
+$color__top-nav-txt: $darkGrey;
+$color__top-nav-background-hover: red;
 
 /* Backgrounds */
 $color__background-button: $territoryOrange;
@@ -60,7 +40,7 @@ $color__background-input: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 
-$color__background-button-hover: $lightOrange;
+$color__background-button-hover: $territoryBlue;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background_selection: mix( $color__background-body, $color__background-button, 75% ); /* lighten( salmon, 22.5% ); // lighten( #0999d4, 48% ); ^/
@@ -75,8 +55,8 @@ $color__text-input-focus: #111;
 
 
 /* Links */
-$color__link: #0073aa;
-$color__link-visited: $territoryBlue;
+$color__link: $darkGrey;
+$color__link-visited: black;
 $color__link-hover: darken( $color__link, 10% );
 
 /* Borders */
@@ -100,3 +80,10 @@ $link_transition: 110ms;
 $icon_transition: 120ms;
 $button_transition: 150ms;
 $background_transition: 200ms;
+
+/* Responsive widths. */
+
+$mobile_width: 600px;
+$tablet_width: 768px;
+$desktop_width: 1168px;
+$wide_width: 1379px;

@@ -23,7 +23,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-  background-color:green;
 }
 p, ul, ol {
   margin: 0 0 1.65em 0;
@@ -41,16 +40,11 @@ p, li {
 }
 /* background */
 /* current link nav */
-/*  
-Color Pallette 253 Hustle https://www.astellescolors.com/2018/01/09/color-inspiration-hustle/
-*/
-/* 
- Color Pallette 204 https://www.astellescolors.com/2017/06/02/color-inspiration-freshened/
- */
 /*Origiinal Territory   https://www.originalterritory.com/
 */
 /* top nav my account, sign in, logo, slideshow overlay backgrounds, right colume feature background */
 /* left colume feature background */
+/* grey */
 /* Navigation*/
 /* Backgrounds */
 /* lighten( salmon, 22.5% ); // lighten( #0999d4, 48% ); ^/
@@ -60,6 +54,7 @@ Color Pallette 253 Hustle https://www.astellescolors.com/2018/01/09/color-inspir
 /* Borders */
 /* buttons */
 /* Transition timeouts */
+/* Responsive widths. */
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -125,8 +120,11 @@ Color Pallette 253 Hustle https://www.astellescolors.com/2018/01/09/color-inspir
 
 }
 .btn--orange:hover{
-		background-color:#EE964B;
+		background-color:#404E66;
 	}
+.site-header.featured-image:after {
+    opacity: 0.5;
+    }
 .site-logo .custom-logo-link {
 	border-radius: 0%;
 
@@ -137,17 +135,33 @@ Color Pallette 253 Hustle https://www.astellescolors.com/2018/01/09/color-inspir
 
 
 	}
-.entry .entry-content p.has-background {
-    padding: 10px 30px;
-    background-color: #737c7e;/* grey heading paragraphs */
+.entry .entry-content p.has-background, h4 {
+	    padding: 14px 30px;
+	    background-color: #737c7e;/* grey heading paragraphs */
+	    color: white;
+	    font-weight: 400;
+	    margin: 0rem 0 1rem 0;
+	}
+.header-book-it-container {
+	max-width: 560px;
+	color: white;
+	
+
 }
-.entry .entry-title {
-    margin: 0;
-    display: none;
+@media (min-width: 1168px) {
+.header-book-it-container {  
+		width: 50%
+	
+
 }
-div.wpcf7 {
-	padding: 0 20px;
+  }
+@media (min-width: 1379px) {
+.header-book-it-container {  
+		width: 35%
+	
+
 }
+  }
 div.wpcf7 input[type="text"], 
 	div.wpcf7 input[type="email"], 
 	div.wpcf7 input[type="url"], 
@@ -165,15 +179,92 @@ div.wpcf7 input[type="text"],
 	div.wpcf7 input[type="color"], 
 	div.wpcf7 textarea { 
 		max-width: 100%;
+		
 	}
-.book-it-container .button, .book-it-container button, .book-it-container input[type="button"], .book-it-container input[type="reset"], .book-it-container input[type="submit"] {
+.book-it-container .button, .book-it-container button, .book-it-container input[type="button"], .book-it-container input[type="reset"], .book-it-container input[type="submit"], .header-book-it-container .button, .header-book-it-container button, .header-book-it-container input[type="button"], .header-book-it-container input[type="reset"], .header-book-it-container input[type="submit"] {
 		background-color: #cc842f;
 		width:100%;
 		text-align: center;
 	}
-.book-it-container .button:hover,.book-it-container button:hover,.book-it-container input[type="button"]:hover,.book-it-container input[type="reset"]:hover,.book-it-container input[type="submit"]:hover{
-			background-color:#EE964B;
+.book-it-container .button:hover,.book-it-container button:hover,.book-it-container input[type="button"]:hover,.book-it-container input[type="reset"]:hover,.book-it-container input[type="submit"]:hover,.header-book-it-container .button:hover,.header-book-it-container button:hover,.header-book-it-container input[type="button"]:hover,.header-book-it-container input[type="reset"]:hover,.header-book-it-container input[type="submit"]:hover{
+			background-color:#404E66;
 		}
 .wp-block-button__link:hover {
-	background-color:#EE964B;
+	background-color:#404E66;
 }
+.border--blue {
+	border: solid #404E66;
+	border-radius: 4px;
+}
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+.main-navigation a {
+  transition: color 110ms ease-in-out;
+  color: #575757;
+}
+/* Navigation */
+.main-navigation a:visited {
+  color: #575757;
+}
+.main-navigation a:hover,
+.main-navigation a:active {
+  color: #575757;
+  outline: 0;
+  text-decoration: none;
+}
+.main-navigation a:focus {
+  outline: thin dotted;
+  text-decoration: underline;
+}
+.main-navigation .main-menu > li {
+          color: #575757;
+          
+      }
+.main-navigation .main-menu > li > a {
+              font-family: 'Roboto', sans serif;
+              font-weight: 300;
+              color: #575757;
+          }
+@media (min-width: 960px) {
+.main-navigation .main-menu > li > a {
+              
+              padding:10px 0
+          }
+  }
+/** === Main menu === */
+.main-navigation .main-menu > li {
+      color: #575757;
+     
+    }
+.main-navigation .main-menu > li > a {
+
+        font-weight: 700;
+        color: #575757;
+      }
+.main-navigation .main-menu > li > a:hover,
+        .main-navigation .main-menu > li > a:hover + svg {
+          color: darken( #575757, 10% );
+        }
+.main-navigation .sub-menu {
+
+    background-color: #575757;
+    color: #fff;
+  }
+.main-navigation .sub-menu > li > a,
+      .main-navigation .sub-menu > li > .menu-item-link-return {
+
+        color: #fff;
+      }
+.main-navigation .sub-menu > li > a:hover,
+        .main-navigation .sub-menu > li > a:focus,
+        .main-navigation .sub-menu > li > .menu-item-link-return:hover,
+        .main-navigation .sub-menu > li > .menu-item-link-return:focus {
+          background: darken( #575757, 10% );
+        }
+.main-navigation .sub-menu > li > a:hover:after, .main-navigation .sub-menu > li > a:focus:after, .main-navigation .sub-menu > li > .menu-item-link-return:hover:after, .main-navigation .sub-menu > li > .menu-item-link-return:focus:after {
+            background: darken( #575757, 10% );
+          }
+.main-navigation .sub-menu > li > a:hover:visited, .main-navigation .sub-menu > li > a:focus:visited, .main-navigation .sub-menu > li > .menu-item-link-return:hover:visited, .main-navigation .sub-menu > li > .menu-item-link-return:focus:visited {
+            background-color: #575757;
+          }

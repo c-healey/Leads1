@@ -11,6 +11,9 @@
 	}
 
 }
+.site-header.featured-image:after {
+    opacity: 0.5;
+    }
 .site-logo .custom-logo-link {
 	border-radius: 0%;
 
@@ -21,18 +24,29 @@
 
 
 	}
+ 
+	.entry .entry-content p.has-background, h4 {
+	    padding: 14px 30px;
+	    background-color: #737c7e;/* grey heading paragraphs */
+	    color: white;
+	    font-weight: 400;
+	    margin: 0rem 0 1rem 0;
+	}
+	
+.header-book-it-container {
+	max-width: 560px;
+	color: white;
+	@mixin atDesktop {  
+		width: 50%;
+	}
+	@mixin atWide {  
+		width: 35%;
+	}
+	
 
-.entry .entry-content p.has-background {
-    padding: 10px 30px;
-    background-color: #737c7e;/* grey heading paragraphs */
-}
-.entry .entry-title {
-    margin: 0;
-    display: none;
 }
 
 div.wpcf7 {
-	padding: 0 20px;
 
 	input[type="text"], 
 	input[type="email"], 
@@ -45,9 +59,10 @@ div.wpcf7 {
 	input[type="week"], input[type="time"], 
 	input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { 
 		max-width: 100%;
+		
 	}
 }
-.book-it-container {
+.book-it-container, .header-book-it-container {
 	
 	
 	.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -62,4 +77,9 @@ div.wpcf7 {
 }
 .wp-block-button__link:hover {
 	background-color:$color__background-button-hover;
+}
+
+.border--blue {
+	border: solid $territoryBlue;
+	border-radius: 4px;
 }
