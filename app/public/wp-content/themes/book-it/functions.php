@@ -31,4 +31,9 @@ function book_a_service_files() {
 
 add_action('wp_enqueue_scripts', 'book_a_service_files');
 
+function wpdocs_dequeue_script() {
+     wp_dequeue_script('twentynineteen-touch-navigation');
+}
+add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
+
 ?>
